@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheung King Lam - Game & VR Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-700 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 font-bold text-2xl bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                    CKL
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-400 transition-colors duration-200">About</a>
+                    <a href="#skills" class="hover:text-blue-400 transition-colors duration-200">Skills</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors duration-200">Projects</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors duration-200">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-300 hover:text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden pb-4 space-y-2" id="mobile-menu">
+                <a href="#about" class="block py-2 px-4 hover:bg-slate-700 rounded transition-colors">About</a>
+                <a href="#skills" class="block py-2 px-4 hover:bg-slate-700 rounded transition-colors">Skills</a>
+                <a href="#projects" class="block py-2 px-4 hover:bg-slate-700 rounded transition-colors">Projects</a>
+                <a href="#contact" class="block py-2 px-4 hover:bg-slate-700 rounded transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="space-y-6 animate-fade-in-left">
+                    <div class="space-y-2">
+                        <h1 class="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent leading-tight">
+                            Cheung King Lam
+                        </h1>
+                        <p class="text-xl sm:text-2xl text-cyan-400 font-semibold">Game & VR Developer</p>
+                    </div>
+                    <p class="text-gray-300 text-lg leading-relaxed max-w-xl">
+                        A passionate student at Hong Kong Polytechnic University specializing in interactive simulations and VR development. I craft immersive experiences that enhance training and safety awareness through cutting-edge technology.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#projects" class="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+                            View My Work <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border-2 border-blue-400 hover:border-cyan-400 rounded-lg font-semibold transition-all duration-200 hover:bg-slate-800">
+                            Get In Touch <i class="fas fa-envelope ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Right Image -->
+                <div class="flex justify-center animate-fade-in-right">
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-2xl opacity-30 animate-pulse"></div>
+                        <div class="relative w-full h-full rounded-2xl overflow-hidden border-2 border-blue-400/50 hover:border-cyan-400 transition-colors duration-300 bg-slate-800">
+                            <img src="profile-photo.png" alt="Cheung King Lam" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">About Me</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group p-8 rounded-xl bg-slate-700/50 hover:bg-slate-700/80 border border-slate-600 hover:border-blue-400 transition-all duration-300 transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-blue-400 group-hover:text-cyan-400 transition-colors">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Education</h3>
+                    <p class="text-gray-300">
+                        Student at Hong Kong Polytechnic University, focused on interactive simulations and VR development with a passion for immersive technology.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="group p-8 rounded-xl bg-slate-700/50 hover:bg-slate-700/80 border border-slate-600 hover:border-blue-400 transition-all duration-300 transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-blue-400 group-hover:text-cyan-400 transition-colors">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Passion</h3>
+                    <p class="text-gray-300">
+                        Dedicated to using technology to enhance training and safety awareness through realistic simulations and virtual reality experiences.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="group p-8 rounded-xl bg-slate-700/50 hover:bg-slate-700/80 border border-slate-600 hover:border-blue-400 transition-all duration-300 transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-blue-400 group-hover:text-cyan-400 transition-colors">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Vision</h3>
+                    <p class="text-gray-300">
+                        Creating innovative solutions that bridge the gap between education and real-world applications through interactive technology.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Technical Skills</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Game Development -->
+                <div class="p-8 rounded-xl bg-slate-800/50 border border-slate-600 hover:border-blue-400 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-gamepad text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold">Game Development</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> Unity
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> C#
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> Real-time Graphics
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3D & VR -->
+                <div class="p-8 rounded-xl bg-slate-800/50 border border-slate-600 hover:border-blue-400 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-cube text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold">3D & VR</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> Blender
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> VR Integration
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> Map Modeling
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="p-8 rounded-xl bg-slate-800/50 border border-slate-600 hover:border-blue-400 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-tools text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold">Tools & Platforms</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> Git Version Control
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> Google Maps Integration
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <span class="text-blue-400 mr-3">▸</span> Terrain Data
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Featured Projects</span>
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project Card -->
+                <div class="group rounded-xl overflow-hidden bg-slate-700/50 border border-slate-600 hover:border-blue-400 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20 transform hover:scale-105">
+                    <div class="h-64 bg-gradient-to-br from-blue-600 to-cyan-600 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                            <i class="fas fa-car text-white text-9xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i>
+                        </div>
+                        <div class="relative text-center">
+                            <div class="text-5xl text-white mb-4">
+                                <i class="fas fa-steering-wheel"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">
+                            Interactive Driving Simulator
+                        </h3>
+                        <p class="text-gray-300 mb-4">
+                            A Unity-based Final Year Project (FYP) designing a realistic driving simulator for the Shatin Ngan Shing route. Integrates VR technology to enhance road safety awareness and prepare students for driving tests.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-4 py-2 rounded-full bg-blue-500/20 text-blue-300 text-sm">Unity</span>
+                            <span class="px-4 py-2 rounded-full bg-blue-500/20 text-blue-300 text-sm">C#</span>
+                            <span class="px-4 py-2 rounded-full bg-blue-500/20 text-blue-300 text-sm">VR</span>
+                            <span class="px-4 py-2 rounded-full bg-blue-500/20 text-blue-300 text-sm">Simulation</span>
+                        </div>
+                        <a href="https://github.com/yourusername/driving-sim" class="inline-flex items-center px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+                            View Code <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- More Projects Coming -->
+                <div class="group rounded-xl overflow-hidden bg-slate-700/50 border border-slate-600 hover:border-blue-400 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20 transform hover:scale-105 flex items-center justify-center min-h-96">
+                    <div class="text-center p-8">
+                        <div class="text-6xl text-blue-400 mb-4">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">More Projects Coming</h3>
+                        <p class="text-gray-300">
+                            Stay tuned for more exciting projects and experiences. Check back soon!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Get In Touch</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Email -->
+                <div class="group p-8 rounded-xl bg-slate-800/50 border border-slate-600 hover:border-blue-400 transition-all duration-300 text-center hover:shadow-lg hover:shadow-blue-500/20">
+                    <div class="text-4xl text-blue-400 mb-4 group-hover:text-cyan-400 transition-colors">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <a href="mailto:24027544d@connect.polyu.hk" class="text-blue-400 hover:text-cyan-400 transition-colors break-all">
+                        24027544d@connect.polyu.hk
+                    </a>
+                </div>
+
+                <!-- Location -->
+                <div class="group p-8 rounded-xl bg-slate-800/50 border border-slate-600 hover:border-blue-400 transition-all duration-300 text-center hover:shadow-lg hover:shadow-blue-500/20">
+                    <div class="text-4xl text-blue-400 mb-4 group-hover:text-cyan-400 transition-colors">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Location</h3>
+                    <p class="text-gray-300">Hong Kong</p>
+                </div>
+
+                <!-- University -->
+                <div class="group p-8 rounded-xl bg-slate-800/50 border border-slate-600 hover:border-blue-400 transition-all duration-300 text-center hover:shadow-lg hover:shadow-blue-500/20">
+                    <div class="text-4xl text-blue-400 mb-4 group-hover:text-cyan-400 transition-colors">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Education</h3>
+                    <p class="text-gray-300">PolyU</p>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://github.com" class="w-14 h-14 rounded-full bg-slate-800/50 border border-slate-600 hover:border-blue-400 flex items-center justify-center text-xl text-gray-300 hover:text-blue-400 transition-all duration-200 transform hover:scale-110">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" class="w-14 h-14 rounded-full bg-slate-800/50 border border-slate-600 hover:border-blue-400 flex items-center justify-center text-xl text-gray-300 hover:text-blue-400 transition-all duration-200 transform hover:scale-110">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:24027544d@connect.polyu.hk" class="w-14 h-14 rounded-full bg-slate-800/50 border border-slate-600 hover:border-blue-400 flex items-center justify-center text-xl text-gray-300 hover:text-blue-400 transition-all duration-200 transform hover:scale-110">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center">
+                <p class="text-gray-300 mb-6 text-lg">
+                    Feel free to reach out for collaborations or just a friendly hello!
+                </p>
+                <a href="mailto:24027544d@connect.polyu.hk" class="inline-flex items-center px-10 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg shadow-blue-500/50">
+                    Send Me an Email <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-700 bg-slate-900/50 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">About</h4>
+                    <p class="text-gray-400 text-sm">
+                        Game and VR developer passionate about creating immersive experiences for training and safety.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-blue-400 transition-colors">About Me</a></li>
+                        <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
+                        <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Follow</h4>
+                    <div class="flex gap-4">
+                        <a href="https://github.com" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:24027544d@connect.polyu.hk" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 Cheung King Lam. All rights reserved. Built with passion and technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
